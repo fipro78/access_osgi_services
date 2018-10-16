@@ -1,0 +1,23 @@
+-runfw: org.apache.felix.framework;version=5
+-runee: JavaSE-1.8
+
+-runsystemcapabilities: ${native_capability}
+
+-resolve.effective: active;skip:="osgi.service"
+
+-runbundles: \
+	org.fipro.modifier.command;version=snapshot,\
+	org.apache.felix.gogo.command;version='[1.0.2,1.0.3)',\
+	org.apache.felix.gogo.runtime;version='[1.1.0,1.1.1)',\
+	org.apache.felix.gogo.shell;version='[1.1.0,1.1.1)',\
+	org.apache.felix.scr;version='[2.1.10,2.1.11)',\
+	org.fipro.modifier.api;version=snapshot,\
+	org.fipro.modifier.inverter;version=snapshot,\
+	org.fipro.modifier.uppercase;version=snapshot
+
+-runrequires: \
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
+	osgi.identity;filter:='(osgi.identity=org.fipro.modifier.command)',\
+	bnd.identity;id='org.fipro.modifier.inverter',\
+	bnd.identity;id='org.fipro.modifier.uppercase'
