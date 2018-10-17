@@ -1,0 +1,17 @@
+-buildpath: \
+	osgi.annotation;version=7.0,\
+	osgi.core;version=7.0,\
+	osgi.cmpn;version=7.0,\
+	javax.ws.rs,\
+	org.eclipse.ecf.osgi.services.remoteserviceadmin,\
+	org.fipro.modifier.api;version=latest,\
+	org.fipro.modifier.remote.api;version=latest
+
+-testpath: \
+	${junit}
+
+javac.source: 1.8
+javac.target: 1.8
+
+Bundle-Version: 0.0.0.${tstamp}
+Private-Package: org.fipro.modifier.remote.server

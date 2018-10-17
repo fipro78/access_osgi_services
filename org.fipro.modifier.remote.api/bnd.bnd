@@ -1,0 +1,15 @@
+-buildpath: \
+	osgi.annotation;version=7.0,\
+	osgi.core;version=7.0,\
+	osgi.cmpn;version=7.0,\
+	javax.ws.rs
+
+-testpath: \
+	${junit}
+
+javac.source: 1.8
+javac.target: 1.8
+
+Bundle-Version: 1.0.0.${tstamp}
+
+Export-Package: org.fipro.modifier.remote.api
