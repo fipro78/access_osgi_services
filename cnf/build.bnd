@@ -35,6 +35,12 @@
 		pretty = true; \
 		local = ${build}/ecf-distribution/jaxrs
 		
+-plugin.7.JAXRS: \
+	aQute.bnd.repository.maven.provider.MavenBndRepository; \
+		releaseUrl=https://repo1.maven.org/maven2/; \
+		index=${.}/aries.maven; \
+		name="Aries JAX-RS Whiteboard"
+
 -releaserepo: Release
 -baselinerepo: Release
 
