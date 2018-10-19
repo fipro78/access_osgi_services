@@ -4,7 +4,9 @@
 	osgi.cmpn;version=7.0,\
 	org.apache.aries.jax.rs.whiteboard,\
 	org.apache.aries.javax.jax.rs-api,\
-	org.apache.servicemix.specs.json-api-1.1,\
+	com.fasterxml.jackson.core.jackson-annotations,\
+	com.fasterxml.jackson.core.jackson-core,\
+	com.fasterxml.jackson.core.jackson-databind,\
 	org.fipro.modifier.api;version=latest
 
 -testpath: \

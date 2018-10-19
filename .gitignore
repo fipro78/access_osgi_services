@@ -3,3 +3,14 @@
 /generated/
 .metadata
 /.recommenders/
+#Ignore all bin folders
+bin/
+target/
+#Ignore all .settings folders
+*/.settings/
+#Ignore vi temporary files
+*~
+*.orig
+*.patch
+class/
+*.class

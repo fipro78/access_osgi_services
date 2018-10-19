@@ -15,7 +15,10 @@
 	org.apache.felix.scr;version='[2.1.10,2.1.11)',\
 	org.fipro.modifier.api;version=snapshot,\
 	org.fipro.modifier.inverter;version=snapshot,\
-	org.fipro.modifier.uppercase;version=snapshot
+	org.fipro.modifier.uppercase;version=snapshot,\
+	com.fasterxml.jackson.core.jackson-annotations;version='[2.9.2,2.9.3)',\
+	com.fasterxml.jackson.core.jackson-core;version='[2.9.2,2.9.3)',\
+	com.fasterxml.jackson.core.jackson-databind;version='[2.9.2,2.9.3)'
 
 -runrequires: \
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\

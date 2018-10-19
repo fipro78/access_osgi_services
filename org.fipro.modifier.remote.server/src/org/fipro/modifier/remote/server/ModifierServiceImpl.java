@@ -18,7 +18,7 @@ import org.osgi.service.component.annotations.Reference;
 @Path("/modify")
 //The OSGi DS component annotation. 
 @Component(
-		immediate = true, 
+		immediate = true,
 		property = { 
 				"service.exported.interfaces=*", 
 				"service.intents=osgi.async",
