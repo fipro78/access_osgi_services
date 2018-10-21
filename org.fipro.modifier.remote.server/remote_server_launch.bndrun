@@ -56,9 +56,11 @@
 	org.fipro.modifier.uppercase;version=snapshot,\
 	org.osgi.util.function;version='[1.1.0,1.1.1)',\
 	org.eclipse.ecf.provider.jersey.server;version='[1.4.0,1.4.1)',\
-	org.eclipse.ecf.provider.jaxrs.server;version='[1.5.1,1.5.2)',\
 	javax.annotation;version='[1.2.0,1.2.1)',\
-	javax.ws.rs;version='[2.0.1,2.0.2)'
+	javax.ws.rs;version='[2.0.1,2.0.2)',\
+	org.eclipse.ecf.console;version='[1.1.0,1.1.1)',\
+	org.eclipse.ecf.osgi.services.remoteserviceadmin.console;version='[1.0.0,1.0.1)',\
+	org.eclipse.ecf.provider.jaxrs.server;version='[1.5.2,1.5.3)'
 
 -runrequires: \
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
@@ -81,5 +83,6 @@
 	bnd.identity;version='latest';id='org.fipro.modifier.remote.api',\
 	bnd.identity;version='latest';id='org.fipro.modifier.remote.server',\
 	bnd.identity;id='javax.ws.rs',\
-	bnd.identity;id='javax.annotation'
+	bnd.identity;id='javax.annotation',\
+	bnd.identity;id='org.eclipse.ecf.osgi.services.remoteserviceadmin.console'
 -runvm: -Dorg.osgi.service.http.port=8080

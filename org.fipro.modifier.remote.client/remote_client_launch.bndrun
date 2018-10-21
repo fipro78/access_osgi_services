@@ -58,7 +58,9 @@
 	org.fipro.modifier.remote.api;version=snapshot,\
 	org.osgi.util.function;version='[1.1.0,1.1.1)',\
 	javax.annotation;version='[1.2.0,1.2.1)',\
-	javax.ws.rs;version='[2.0.1,2.0.2)'
+	javax.ws.rs;version='[2.0.1,2.0.2)',\
+	org.eclipse.ecf.console;version='[1.1.0,1.1.1)',\
+	org.eclipse.ecf.osgi.services.remoteserviceadmin.console;version='[1.0.0,1.0.1)'
 
 -runrequires: \
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
@@ -78,4 +80,5 @@
 	bnd.identity;id='org.apache.httpcomponents.httpclient',\
 	bnd.identity;id='org.apache.httpcomponents.httpcore',\
 	bnd.identity;id='javax.ws.rs',\
-	bnd.identity;id='javax.annotation'
+	bnd.identity;id='javax.annotation',\
+	bnd.identity;id='org.eclipse.ecf.osgi.services.remoteserviceadmin.console'
